@@ -1,0 +1,51 @@
+
+# Node modules
+node_modules/
+
+# Test results
+test-results/
+playwright-report/
+reports/
+allure-report/
+allure-results/
+
+# Authentication state
+.auth/
+
+# Environment variables
+.env
+.env.local
+.env.test
+
+# Playwright
+playwright/.cache/
+.playwright/
+
+# Generated files
+.features-gen/
+.cucumber/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Screenshots & Videos
+screenshots/
+videos/
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

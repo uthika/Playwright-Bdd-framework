@@ -1,0 +1,48 @@
+{
+  "name": "dsalgo-playwright-bdd-framework",
+  "version": "1.0.0",
+  "description": "Playwright BDD Framework for DS Algo Portal Testing",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  "bddgen": "bddgen",
+  "test": "npm run bddgen && npx playwright test",
+  "test:setup": "npm run bddgen && npx playwright test --project=setup",
+  "test:modules": "npm run bddgen && npx playwright test --project=modules",
+  "test:cleanup": "npm run bddgen && npx playwright test --project=cleanup",
+  "test:headed": "npm run bddgen && npx playwright test --headed",
+  "test:debug": "npm run bddgen && npx playwright test --debug",
+  "test:ui": "npm run bddgen && npx playwright test --ui",
+  "test:smoke": "npm run bddgen && npx playwright test --grep @smoke",
+  "test:regression": "npm run bddgen && npx playwright test --grep @regression",
+  "report": "npx playwright show-report",
+  "allure:generate": "npx allure generate reports/allure-results --clean -o reports/allure-report",
+  "allure:open": "npx allure open reports/allure-report",
+  "allure:serve": "npx allure serve reports/allure-results",
+  "test:allure": "npm test && npm run allure:generate && npm run allure:open",
+  "clean": "rm -rf reports/ test-results/ .auth/ playwright-report/ allure-report/ .features-gen/ allure-results/",
+  "clean:reports": "rm -rf reports/ test-results/ playwright-report/ allure-report/ allure-results/",
+  "test:report": "npm run clean:reports && npm test; npm run allure:generate && npm run allure:open",
+  "test:serve": "npm run clean:reports && npm test; npx allure serve reports/allure-results"
+},
+
+  "keywords": [
+    "playwright",
+    "bdd",
+    "cucumber",
+    "testing",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.2.0",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.3",
+    "dotenv": "^16.6.1",
+    "exceljs": "^4.4.0",
+    "playwright-bdd": "^8.4.2",
+    "winston": "^3.15.0"
+  }
+}
