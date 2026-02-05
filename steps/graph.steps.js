@@ -8,26 +8,26 @@ const { Given, When, Then } = createBdd();
 // NAVIGATION
 // ========================================
 
-When('The user navigates to Stack page', async ({ stackPage }) => {
-  await stackPage.navigateToStackPage();
+When('The user navigates to Graph page', async ({ graphPage }) => {
+  await graphPage.navigateToGraphPage();
 });
 
 // ========================================
-// ACTIONS - TOPICS (Stack specific)
+// ACTIONS - TOPICS (Graph specific)
 // ========================================
 
-When('The user clicks on Stack topic {string}', async ({ stackPage }, topicName) => {
-  await stackPage.clickTopic(topicName);
+When('The user clicks on Graph topic {string}', async ({ graphPage }, topicName) => {
+  await graphPage.clickTopic(topicName);
 });
 
 // ========================================
-// ACTIONS - EDITOR (Stack specific)
+// ACTIONS - EDITOR (Graph specific)
 // ========================================
 
-// ✅ ADD SMART LOGIC (same as Array & LinkedList)
+// ✅ ADD SMART LOGIC (final module!)
 let expectingError = false;
 
-When('The user enters test code from {string} and {int} in Stack editor',
+When('The user enters test code from {string} and {int} in Graph editor',
   async ({ editorPage, excelReader }, sheetName, rowNumber) => {
     const data = await excelReader.readExcel(sheetName, rowNumber);
     await editorPage.enterCode(data.Code);
@@ -36,7 +36,7 @@ When('The user enters test code from {string} and {int} in Stack editor',
     expectingError = (rowNumber === 1);
   });
 
-When('The user clicks Run button in Stack editor', async ({ editorPage }) => {
+When('The user clicks Run button in Graph editor', async ({ editorPage }) => {
   // ✅ Use different method based on whether we expect error
   if (expectingError) {
     await editorPage.clickRunExpectingError();
@@ -46,24 +46,24 @@ When('The user clicks Run button in Stack editor', async ({ editorPage }) => {
 });
 
 // ========================================
-// VERIFICATION (Stack specific)
+// VERIFICATION (Graph specific)
 // ========================================
 
-Then('The user should see Stack module page', async ({ stackPage }) => {
-  await stackPage.verifyLandingPage();  // ✅ Changed from verifyStackPage() to match StackPage.js
+Then('The user should see Graph module page', async ({ graphPage }) => {
+  await graphPage.verifyLandingPage();  // ✅ Changed from verifyGraphPage() to match GraphPage.js
 });
 
-Then('The user should see Stack topic page for {string}', async ({ page }, topicName) => {
+Then('The user should see Graph topic page for {string}', async ({ page }, topicName) => {
   await page.waitForLoadState('networkidle');
 });
 
-Then('The user should see output from {string} and {int} in Stack editor',
+Then('The user should see output from {string} and {int} in Graph editor',
   async ({ editorPage, excelReader }, sheetName, rowNumber) => {
     const data = await excelReader.readExcel(sheetName, rowNumber);
     await editorPage.verifyOutput(data.ExpectedOutput);
   });
 
-Then('The user should see error alert in Stack editor', async ({ editorPage }) => {
+Then('The user should see error alert in Graph editor', async ({ editorPage }) => {
   // ✅ Error was already handled during clickRunExpectingError
   logger.info('✅ Error alert was handled during clickRunExpectingError');
 });

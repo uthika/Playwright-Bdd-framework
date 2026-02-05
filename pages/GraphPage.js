@@ -1,44 +1,42 @@
 import { expect } from '@playwright/test';
 import { logger } from '../utils/Logger.js';
 
-export class StackPage {
+export class GraphPage {
   constructor(page) {
     this.page = page;
+    this.moduleHeading = page.locator('h1, h4').filter({ hasText: /graph/i }).first();
+    this.moduleDescription = page.locator('text=/A graph is a non-linear data structure/i');
     
-    this.moduleHeading = page.locator('h1, h4').filter({ hasText: /stack/i }).first();
-    this.moduleDescription = page.locator('text=/A stack is a linear data structure/i');
-    
-    this.operationsInStackLink = page.getByRole('link', { name: 'Operations in Stack' });
-    this.implementationLink = page.getByRole('link', { name: 'Implementation' });
-    this.applicationsLink = page.getByRole('link', { name: 'Applications' });
-    this.practiceQuestionsLink = page.getByRole('link', { name: 'Practice Questions' });
-    
-    this.tryHereLink = page.getByRole('link', { name: 'Try here>>>' });
+    // ✅ Add exact: true to all links
+    this.graphLink = page.getByRole('link', { name: 'Graph', exact: true });
+    this.graphRepresentationsLink = page.getByRole('link', { name: 'Graph Representations', exact: true });  // ✅ ADDED
+    this.practiceQuestionsLink = page.getByRole('link', { name: 'Practice Questions', exact: true });  // ✅ ADDED
+    this.tryHereLink = page.getByRole('link', { name: 'Try here>>>', exact: true });  // ✅ ADDED
   }
 
-  async navigateToStackPage() {
-    await this.page.goto('/stack');
-    logger.info('Navigated to Stack landing page');
+  async navigateToGraphPage() {
+    await this.page.goto('/graph');
+    logger.info('Navigated to Graph landing page');
   }
 
   async verifyLandingPage() {
     await expect(this.moduleHeading).toBeVisible();
-    logger.info('Verified Stack landing page loaded');
+    logger.info('Verified Graph landing page loaded');
   }
 
   async verifyModuleHeading() {
     await expect(this.moduleHeading).toBeVisible();
-    logger.info('Verified Stack module heading');
+    logger.info('Verified Graph module heading');
   }
 
   async verifyModuleDescription() {
     await expect(this.moduleDescription).toBeVisible();
-    logger.info('Verified Stack module description');
+    logger.info('Verified Graph module description');
   }
 
   async verifyTopicsList(topics) {
     for (const topic of topics) {
-      const topicLink = this.page.getByRole('link', { name: topic });
+      const topicLink = this.page.getByRole('link', { name: topic, exact: true });  // ✅ ADDED
       await expect(topicLink).toBeVisible();
       logger.info(`Verified topic visible: ${topic}`);
     }
@@ -46,9 +44,8 @@ export class StackPage {
 
   async clickTopic(topicName) {
     const topicMap = {
-      'Operations in Stack': this.operationsInStackLink,
-      'Implementation': this.implementationLink,
-      'Applications': this.applicationsLink
+      'Graph': this.graphLink,
+      'Graph Representations': this.graphRepresentationsLink
     };
     
     await topicMap[topicName].click();
