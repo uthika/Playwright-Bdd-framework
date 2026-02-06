@@ -67,3 +67,12 @@ Then('The user should see error alert in Tree editor', async ({ editorPage }) =>
   // ✅ Error was already handled during clickRunExpectingError
   logger.info('✅ Error alert was handled during clickRunExpectingError');
 });
+
+When('The user clicks Practice Questions link in Tree module', async ({ practiceQuestionPage }) => {
+  await practiceQuestionPage.clickPracticeQuestions();
+});
+
+Then('The user should see Tree practice questions page', async ({ page }) => {
+  await expect(page).toHaveURL(/.*tree\/practice.*/, { timeout: 10000 });
+  console.log('✅ On Tree Practice Questions page');
+});

@@ -48,3 +48,12 @@ Feature: Tree Module
     And The user enters test code from "EditorTest" and 1 in Tree editor
     And The user clicks Run button in Tree editor
     Then The user should see error alert in Tree editor
+
+
+      @tree @phase5 @bug @known-issue
+  Scenario: BUG - Tree Practice Questions page is empty
+    When The user navigates to Tree page
+    And The user clicks on Tree topic "Overview of Trees"
+    And The user clicks Practice Questions link in Tree module
+    Then The user should see Tree practice questions page
+    And The page should have practice questions content

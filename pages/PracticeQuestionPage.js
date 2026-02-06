@@ -95,4 +95,9 @@ export class PracticeQuestionPage {
   async handleErrorAlert() {
     await this.editorPage.handleErrorAlert();
   }
+
+  async verifyQuestionsExist() {
+  await expect(this.questionHeading).toBeVisible({ timeout: 5000 });
+  logger.info('Verified practice questions content exists');
+}
 }

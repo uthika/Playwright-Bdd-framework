@@ -67,3 +67,12 @@ Then('The user should see error alert in Graph editor', async ({ editorPage }) =
   // ✅ Error was already handled during clickRunExpectingError
   logger.info('✅ Error alert was handled during clickRunExpectingError');
 });
+
+When('The user clicks Practice Questions link in Graph module', async ({ practiceQuestionPage }) => {
+  await practiceQuestionPage.clickPracticeQuestions();
+});
+
+Then('The user should see Graph practice questions page', async ({ page }) => {
+  await expect(page).toHaveURL(/.*graph\/practice.*/, { timeout: 10000 });
+  console.log('✅ On Graph Practice Questions page');
+});

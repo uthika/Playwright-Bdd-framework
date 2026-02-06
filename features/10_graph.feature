@@ -37,3 +37,12 @@ Feature: Graph Module
     And The user enters test code from "EditorTest" and 1 in Graph editor
     And The user clicks Run button in Graph editor
     Then The user should see error alert in Graph editor
+
+
+      @graph @phase5 @bug @known-issue
+  Scenario: BUG - Graph Practice Questions page is empty
+    When The user navigates to Graph page
+    And The user clicks on Graph topic "Graph"
+    And The user clicks Practice Questions link in Graph module
+    Then The user should see Graph practice questions page
+    And The page should have practice questions content
