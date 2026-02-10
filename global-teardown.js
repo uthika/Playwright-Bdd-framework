@@ -6,8 +6,38 @@ async function globalTeardown() {
   console.log('   STARTING GLOBAL TEARDOWN');
   console.log('========================================\n');
   
+
   // ========================================
-  // 1. CLEAR AUTHENTICATION FILES
+  // 1. LOGOUT FROM APPLICATION
+  // ========================================
+  try {
+    console.log('🚪 Logging out from application...');
+    
+    if (fs.existsSync('.auth/user.json')) {
+      const browser = await chromium.launch({ headless: true });
+      const context = await browser.newContext({ storageState: '.auth/user.json' });
+      const page = await context.newPage();
+      
+      await page.goto(process.env.BASE_URL + '/home', { waitUntil: 'domcontentloaded' });
+      
+      // Click Sign out if visible
+      const signOutLink = page.getByRole('link', { name: 'Sign out' });
+      if (await signOutLink.isVisible({ timeout: 5000 })) {
+        await signOutLink.click();
+        console.log('   ✅ Logged out successfully');
+      } else {
+        console.log('   ℹ️  Already logged out or session expired');
+      }
+      
+      await browser.close();
+    }
+  } catch (error) {
+    console.log('   ⚠️ Logout failed:', error.message);
+  }
+
+
+  // ========================================
+  // 2. CLEAR AUTHENTICATION FILES
   // ========================================
   try {
     console.log('🗑️  Clearing authentication state...');
@@ -22,7 +52,7 @@ async function globalTeardown() {
   }
   
   // ========================================
-  // 2. CLEAR BROWSER STORAGE/CACHE
+  // 3. CLEAR BROWSER STORAGE/CACHE
   // ========================================
   try {
     console.log('\n🧽 Clearing browser storage...');
@@ -36,7 +66,7 @@ async function globalTeardown() {
   }
   
   // ========================================
-  // 3. PRINT TEST EXECUTION SUMMARY
+  // 4. PRINT TEST EXECUTION SUMMARY
   // ========================================
   console.log('\n📊 ========================================');
   console.log('   TEST EXECUTION SUMMARY');
