@@ -8,32 +8,32 @@ Then the user should see the "Get Started" button
 And the user should see the text "Preparing for the Interviews You are at the right place"
 
 
- @noauth @phase1
+@noauth @phase1
 Scenario: Verify the Home page for a user without signing in
 When the user clicks on "Get Started" button
 Then the user should be on the Home page
 And the top right page title should be "NumpyNinja" with dropdown options
 And the top left page should show "Register" and "Sign In"
 
- @noauth @phase1
+@noauth @phase1
 Scenario: Verify clicking on NumpyNinja option
 When the user clicks on "Get Started" button
 And the user clicks on NumpyNinja link
 Then the user should be redirected to the Base page
 
- @noauth @phase1
+@noauth @phase1
 Scenario: Verify clicking on Register option
   When the user clicks on "Get Started"
   And the user clicks on Register link 
   Then the user should be redirected to the Register page
 
- @noauth @phase1
+@noauth @phase1
 Scenario: Verify clicking on Sign In option
 When the user clicks on "Get Started" button
 And the user clicks on Sign In link
 Then the user should be redirected to the Sign In page
 
- @noauth @phase1
+@noauth @phase1
 Scenario: Verify that the user can view Data Structures dropdown options without signing in
   When the user clicks on the Data Structures dropdown
   Then the user should see the following options in the dropdown:
@@ -47,7 +47,7 @@ Scenario: Verify that the user can view Data Structures dropdown options without
     | Graph |
 
 
-  @noauth @phase1
+@noauth @phase1
 Scenario Outline: Warning message shown when selecting a Data Structures option without signing in
   When the user selects "<option>" from the Data Structures dropdown
   Then the user should see a warning message "You are not logged in"
@@ -62,7 +62,7 @@ Examples:
   | Tree |
   | Graph |
 
- @noauth @phase1
+@noauth @phase1
 Scenario Outline: Warning message shown when clicking Get Started without signing in
   When the user clicks the "Get Started" button for "<module>" on the home page
   Then the user should see a warning message "You are not logged in"
