@@ -7,7 +7,7 @@ Scenario: Verify that user is able to open the DS Algo portal
 Then the user should see the "Get Started" button
 And the user should see the text "Preparing for the Interviews You are at the right place"
 
-# ✅ OPTION 2: Verify main Get Started navigates to /home
+
  @noauth @phase1
 Scenario: Verify the Home page for a user without signing in
 When the user clicks on "Get Started" button
@@ -46,7 +46,7 @@ Scenario: Verify that the user can view Data Structures dropdown options without
     | Tree |
     | Graph |
 
- # ✅ OPTION 3: Test all module Get Started buttons show alert
+
   @noauth @phase1
 Scenario Outline: Warning message shown when selecting a Data Structures option without signing in
   When the user selects "<option>" from the Data Structures dropdown
@@ -62,7 +62,7 @@ Examples:
   | Tree |
   | Graph |
 
-
+ @noauth @phase1
 Scenario Outline: Warning message shown when clicking Get Started without signing in
   When the user clicks the "Get Started" button for "<module>" on the home page
   Then the user should see a warning message "You are not logged in"
@@ -78,6 +78,7 @@ Examples:
   | Graph |
 
 
+@withAuth @phase4
 Scenario: User verifies logged in state on homepage
   Given The user is logged in and on Home page
   Then The user should see username displayed in header
@@ -116,7 +117,7 @@ Scenario Outline: User accesses module pages via Get Started buttons after login
     | Graph                        | graph                        | 
 
 
-    @withauth @phase4 @crossmodule
+@withauth @phase4 @crossmodule
 Scenario Outline: User navigates between modules via dropdown
   Given The user is logged in and on "<StartModule>" page
   When The user clicks on dropdown menu
