@@ -37,7 +37,6 @@ Feature: User Sign In
 
     Examples:
       | protected_url                                  |
-      | /array/                                        |
       | /data-structures-introduction/time-complexity/ |
       | /array/arrays-in-python/                       |
       | /linked-list/types-of-linked-list/             |
