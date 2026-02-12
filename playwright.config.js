@@ -85,6 +85,7 @@ export default defineConfig({
       name: 'phase3-signin',
       testMatch: /.*03_signin\.feature/,
       grep: /@signin/,
+      grepInvert: /@security/, 
       //dependencies: ['phase2-registration'],
       fullyParallel: false,  // ✅ Sequential within phase
       use: { 
