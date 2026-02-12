@@ -33,7 +33,7 @@ Feature: User Sign In
   @security
   Scenario Outline: Unauthenticated users cannot access protected pages
     When the user navigates directly to "<protected_url>"
-    Then the unauthenticated user should be redirected to home page
+    Then The user should be redirected to home page
 
     Examples:
       | protected_url                                  |
@@ -42,6 +42,6 @@ Feature: User Sign In
       | /array/arrays-in-python/                       |
       | /linked-list/types-of-linked-list/             |
       | /stack/stack-applications/                     |
-      | /queue/QueueOp/queue                           |
+      | /queue/QueueOp/                                |
       | /tree/types-of-trees/                          |
       | /graph/graph-representations/                  |
