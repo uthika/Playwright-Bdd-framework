@@ -17,7 +17,9 @@ Given('The user is on the homepage without login', async ({ homePage }) => {
   await homePage.navigateToHomepage();
 });
 
+//========================================
 // Navigate directly to /home (where dropdown exists)
+//========================================
 Given('The user is on the home page without login', async ({ page }) => {
   await page.goto('/home', { waitUntil: 'domcontentloaded', timeout: 30000 });
   // Wait for page to load

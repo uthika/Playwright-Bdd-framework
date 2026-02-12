@@ -1,7 +1,6 @@
 @homepage @regression
 Feature: Accessing DS Algo Portal Home Page
 
-
 @noauth @phase1
 Scenario: Verify that user is able to open the DS Algo portal
 Then the user should see the "Get Started" button
@@ -35,8 +34,8 @@ Then the user should be redirected to the Sign In page
 
  @noauth @phase1
 Scenario: Verify that the user can view Data Structures dropdown options without signing in
-  When the user clicks on the Data Structures dropdown
-  Then the user should see the following options in the dropdown:
+When the user clicks on the Data Structures dropdown
+Then the user should see the following options in the dropdown:
 
     | Data Structures |
     | Array |
@@ -47,10 +46,10 @@ Scenario: Verify that the user can view Data Structures dropdown options without
     | Graph |
 
  # ✅ OPTION 3: Test all module Get Started buttons show alert
-  @noauth @phase1
+@noauth @phase1
 Scenario Outline: Warning message shown when selecting a Data Structures option without signing in
-  When the user selects "<option>" from the Data Structures dropdown
-  Then the user should see a warning message "You are not logged in"
+When the user selects "<option>" from the Data Structures dropdown
+Then the user should see a warning message "You are not logged in"
 
 Examples:
   | option |
@@ -62,10 +61,10 @@ Examples:
   | Tree |
   | Graph |
 
-
+@noauth @phase1
 Scenario Outline: Warning message shown when clicking Get Started without signing in
-  When the user clicks the "Get Started" button for "<module>" on the home page
-  Then the user should see a warning message "You are not logged in"
+When the user clicks the "Get Started" button for "<module>" on the home page
+Then the user should see a warning message "You are not logged in"
 
 Examples:
   | module |
@@ -77,18 +76,18 @@ Examples:
   | Tree |
   | Graph |
 
-
+@noauth @phase1
 Scenario: User verifies logged in state on homepage
-  Given The user is logged in and on Home page
-  Then The user should see username displayed in header
-  And The user should see Sign out link on homepage
+Given The user is logged in and on Home page
+Then The user should see username displayed in header
+And The user should see Sign out link on homepage
 
 @withauth @phase4
 Scenario Outline: User accesses dropdown menu items after login
-  Given The user is logged in and on Home page
-  When The user clicks on dropdown menu
-  And The user selects "<MenuItem>" from dropdown
-  Then The user should be on "<ModulePage>" module page
+Given The user is logged in and on Home page
+When The user clicks on dropdown menu
+And The user selects "<MenuItem>" from dropdown
+Then The user should be on "<ModulePage>" module page
 
   Examples:
     | MenuItem    | ModulePage   |
@@ -102,9 +101,9 @@ Scenario Outline: User accesses dropdown menu items after login
 
 @withauth @phase4
 Scenario Outline: User accesses module pages via Get Started buttons after login
-  Given The user is logged in and on Home page
-  When The user clicks on "<Module>" Get Started button
-  Then The user should be on "<ModulePage>" page
+Given The user is logged in and on Home page
+When The user clicks on "<Module>" Get Started button
+Then The user should be on "<ModulePage>" page
 
   Examples:
     | Module                       | ModulePage                   |
@@ -116,12 +115,12 @@ Scenario Outline: User accesses module pages via Get Started buttons after login
     | Graph                        | graph                        | 
 
 
-    @withauth @phase4 @crossmodule
+@withauth @phase4 @crossmodule
 Scenario Outline: User navigates between modules via dropdown
-  Given The user is logged in and on "<StartModule>" page
-  When The user clicks on dropdown menu
-  And The user selects "<TargetModule>" from dropdown
-  Then The user should be on "<TargetModule>" module page
+Given The user is logged in and on "<StartModule>" page
+When The user clicks on dropdown menu
+And The user selects "<TargetModule>" from dropdown
+Then The user should be on "<TargetModule>" module page
 
   Examples:
     | StartModule | TargetModule |
@@ -147,12 +146,12 @@ Examples:
     
 @withauth @phase4 @logout
 Scenario: User logs out and logs back in
-  Given The user is logged in and on Home page
-  When The user clicks Sign out link from header
-  Then The user should see alert message "Logged out successfully"
-  And The user should see Sign in link on homepage
-  And The user should see Register link on homepage
-  When The user logs in with credentials from environment
-  Then The user should be logged in successfully
-  And The user should see username displayed in header
+Given The user is logged in and on Home page
+When The user clicks Sign out link from header
+Then The user should see alert message "Logged out successfully"
+And The user should see Sign in link on homepage
+And The user should see Register link on homepage
+When The user logs in with credentials from environment
+Then The user should be logged in successfully
+And The user should see username displayed in header
   

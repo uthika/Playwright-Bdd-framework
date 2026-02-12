@@ -16,8 +16,7 @@ export class HomePage {
     // Dropdown menu
     this.dropdownMenu = page.locator('[data-toggle="dropdown"], .nav-link.dropdown-toggle');
 
-    // Module Get Started buttons (cards on /home page)
-    // Using nth() to get specific card buttons in order
+    // Module Get Started buttons (cards on /home page) Using nth() to get specific card buttons in order
     this.dataStructuresGetStarted = page.getByRole('link', { name: 'Get Started' }).first();
     this.arrayGetStarted = page.getByRole('link', { name: 'Get Started' }).nth(1);
     this.linkedListGetStarted = page.getByRole('link', { name: 'Get Started' }).nth(2);
