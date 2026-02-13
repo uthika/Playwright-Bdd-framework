@@ -1,12 +1,13 @@
 import { chromium } from '@playwright/test';
 import fs from 'fs';
+import 'dotenv/config';
 
 async function globalTeardown() {
   console.log('\n🧹 ========================================');
   console.log('   STARTING GLOBAL TEARDOWN');
   console.log('========================================\n');
   
-  
+
   // ========================================
   // 1. LOGOUT FROM APPLICATION
   // ========================================
@@ -71,8 +72,8 @@ async function globalTeardown() {
   console.log('\n📊 ========================================');
   console.log('   TEST EXECUTION SUMMARY');
   console.log('========================================');
-  console.log(`   Test Results: test-results/results.json`);
-  console.log(`   HTML Report: playwright-report/index.html`);
+  console.log(`   Test Results: reports/test-results/results.json`);
+  console.log(`   HTML Report:  reports/playwright-report/index.html`);
   console.log(`   Timestamp: ${new Date().toLocaleString()}`);
   
   console.log('\n✅ ========================================');
