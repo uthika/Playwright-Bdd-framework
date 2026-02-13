@@ -1,0 +1,5 @@
+info: Navigated to sign in page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:41"}
+info: Entered username: cena {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:41"}
+info: Entered password {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:42"}
+info: Clicked Login button {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:43"}
+info: Verified error message: Invalid Username and Password {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:45"}

@@ -1,0 +1,4 @@
+🔍 Looking for "Graph" Get Started button...
+info: Clicked Graph Get Started button {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:34"}
+✅ Clicked "Graph" Get Started button
+info: Verified alert message: You are not logged in {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:34"}

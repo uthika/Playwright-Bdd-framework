@@ -1,0 +1,2 @@
+info: Navigated to sign in page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:59"}
+✅ Navigated directly to /array/arrays-in-python/
