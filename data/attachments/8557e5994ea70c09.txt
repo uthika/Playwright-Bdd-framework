@@ -1,4 +1,0 @@
-✅ Navigated to Array page
-info: Clicked NumpyNinja logo {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:21:47"}
-✅ Clicked NumpyNinja logo
-✅ User is on the landing page

@@ -1,0 +1,2 @@
+info: Navigated to sign in page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:01:01"}
+✅ Navigated directly to /graph/graph-representations/

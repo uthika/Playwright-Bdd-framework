@@ -1,0 +1,11 @@
+info: Detected OS: linux, using Control key {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:07"}
+info: Navigated to Queue landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:07"}
+info: Clicked topic: Queue Operations {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:08"}
+info: Loaded Excel file: ./testdata/TestData.xlsx {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:08"}
+info: Read data from sheet: EditorTest, row: 1 {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:08"}
+info: 📝 Normalized 1 lines of code {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:08"}
+info: ✅ Entered code in editor with normalized indentation {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:10"}
+info: Triggered Run button click (expecting error) {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:10"}
+info: Error dialog appeared: SyntaxError: EOF in multi-line statement on line 2 {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:10"}
+info: Accepted error dialog {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:10"}
+info: ✅ Error alert was handled during clickRunExpectingError {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:03:10"}

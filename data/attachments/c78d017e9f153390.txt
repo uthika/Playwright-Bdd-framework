@@ -1,2 +1,0 @@
-info: Navigated to Graph landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:23:06"}
-info: Clicked topic: Graph {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:23:06"}
