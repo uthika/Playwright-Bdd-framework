@@ -15,6 +15,9 @@ export class DataStructuresPage {
     
     // Try here link
     this.tryHereLink = page.getByRole('link', { name: 'Try here>>>' });
+
+    // Practice-specific elements
+    this.questionHeading = page.locator('h2:has-text("QUESTION")');
   }
 
   async navigateToDataStructuresPage() {
@@ -76,4 +79,10 @@ export class DataStructuresPage {
     await expect(this.page).toHaveURL(/.*practice/);
     logger.info('Verified Practice Questions page loaded');
   }
+
+  async verifyPracticeQuestionsContent() {
+  // BUG: Page is empty - this should fail
+  await expect(this.questionHeading).toBeVisible({ timeout: 5000 });
+  logger.info('Verified practice questions content exists');
+}
 }

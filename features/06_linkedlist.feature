@@ -42,3 +42,12 @@ Feature: Linked List Module
     And The user enters test code from "EditorTest" and 1 in Linked List editor
     And The user clicks Run button in Linked List editor
     Then The user should see error alert in Linked List editor
+
+
+    @linkedlist @phase5 @bug @known-issue
+  Scenario: BUG - Linked List Practice Questions page is empty
+    When The user navigates to Linked List page
+    And The user clicks on Linked List topic "Introduction"
+    And The user clicks Practice Questions link in Linked List module
+    Then The user should see Linked List practice questions page
+    And The page should have practice questions content  

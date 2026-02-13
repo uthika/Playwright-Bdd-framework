@@ -18,8 +18,7 @@ Feature: Data Structures Module
     Examples:
       | TopicName           |
       | Time Complexity     |
-      | Practice Questions  |
-
+      
   @datastructures @phase5
   Scenario: User tests Try Here editor with valid code in Data Structures
     When The user navigates to Data Structures page
@@ -37,3 +36,11 @@ Feature: Data Structures Module
     And The user enters test code from "EditorTest" and 1 in Data Structures editor
     And The user clicks Run button in Data Structures editor
     Then The user should see error alert in Data Structures editor
+    
+  @datastructures @phase5 @bug @known-issue
+  Scenario: BUG - Data Structures Practice Questions page is empty
+    When The user navigates to Data Structures page
+    And The user clicks on Data Structures topic "Time Complexity"
+    And The user clicks Practice Questions link in Data Structures module
+    Then The user should see Data Structures practice questions page
+    And The page should have practice questions content
