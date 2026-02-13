@@ -1,6 +1,0 @@
-info: Navigated to registration page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:01:18"}
-info: Entered username: testuser123 {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:01:18"}
-info: Entered password {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:01:18"}
-info: Entered password confirmation {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:01:18"}
-info: Clicked Register button {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:01:18"}
-info: ✅ Password confirmation validation triggered: Please fill out this field. {"service":"dsalgo-test-framework","timestamp":"2026-02-13 17:01:18"}
