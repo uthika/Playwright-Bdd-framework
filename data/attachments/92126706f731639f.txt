@@ -1,0 +1,2 @@
+info: Navigated to sign in page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 15:24:19"}
+✅ Navigated directly to /linked-list/types-of-linked-list/

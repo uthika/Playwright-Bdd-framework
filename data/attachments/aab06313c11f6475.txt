@@ -1,0 +1,2 @@
+info: Navigated to Linked List landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 15:27:25"}
+info: Clicked topic: Deletion {"service":"dsalgo-test-framework","timestamp":"2026-02-13 15:27:25"}
