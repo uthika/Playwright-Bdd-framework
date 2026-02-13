@@ -1,0 +1,12 @@
+info: Navigated to registration page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:14:58"}
+info: Entered username: playwrightjs {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:14:58"}
+info: Entered password {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:14:58"}
+info: Entered password confirmation {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:14:58"}
+info: Clicked Register button {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:14:58"}
+error: ❌ Expected error message not found: "already exists" {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:14:59"}
+error: Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "already exists"
+Received string:    "·····
+            password_mismatch:The two password fields didn’t match.·····
+  " {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:14:59"}

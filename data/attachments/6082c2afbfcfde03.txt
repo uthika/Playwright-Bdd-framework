@@ -1,0 +1,3 @@
+✅ Navigated to Tree page
+info: Clicked dropdown menu {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:14:37"}
+info: Selected Graph from dropdown {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:14:37"}
