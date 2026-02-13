@@ -1,0 +1,2 @@
+info: Navigated to Linked List landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 15:51:57"}
+info: Clicked topic: Creating Linked List {"service":"dsalgo-test-framework","timestamp":"2026-02-13 15:51:57"}
