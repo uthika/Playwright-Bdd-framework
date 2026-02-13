@@ -23,7 +23,7 @@ export default defineConfig({
   fullyParallel: false,  // ✅ Enable parallel execution
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 0 : 0,
-  workers: process.env.CI ? 1 : 4,  // ✅ CHANGED: 1 → 4 workers for parallel execution
+  workers: process.env.CI ? 2 : 4,  // ✅ CHANGED: 1 → 4 workers for parallel execution
   maxFailures: undefined,
 
 
