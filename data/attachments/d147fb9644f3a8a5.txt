@@ -1,3 +1,0 @@
-info: Detected OS: linux, using Control key {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:18:01"}
-info: Navigated to Graph landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:18:01"}
-info: Clicked topic: Graph {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:18:01"}

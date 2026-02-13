@@ -1,2 +1,0 @@
-info: Navigated to Tree landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:17:28"}
-info: Clicked topic: Types of Binary Trees {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:17:29"}

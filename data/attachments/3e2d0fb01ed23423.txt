@@ -1,5 +1,0 @@
-info: Navigated to sign in page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:12:26"}
-info: Entered username: playwrightjs {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:12:26"}
-info: Entered password {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:12:26"}
-info: Clicked Login button {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:12:27"}
-info: Verified error message: Invalid Username and Password {"service":"dsalgo-test-framework","timestamp":"2026-02-13 16:12:29"}
