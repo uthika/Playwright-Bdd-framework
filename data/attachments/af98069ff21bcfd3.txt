@@ -1,0 +1,3 @@
+info: Navigated to homepage {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:27:42"}
+info: Clicked Get Started button {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:27:42"}
+✅ Redirected to /home
