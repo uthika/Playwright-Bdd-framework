@@ -1,0 +1,26 @@
+info: Detected OS: linux, using Control key {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:58"}
+info: Navigated to Array landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: Clicked topic: Arrays in Python {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: Clicked Practice Questions link {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: 🔍 About to click practice question: Squares of a Sorted Array {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: Clicked practice question: Squares of a Sorted Array {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: ✅ Clicked practice question: Squares of a Sorted Array {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: 📖 Reading solution from Excel: ArrayPracticeSolutions, Row: 3 {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: Loaded Excel file: ./testdata/TestData.xlsx {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: Read data from sheet: ArrayPracticeSolutions, row: 3 {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: 📝 Solution code starts with: def sortedSquares(nums):
+    result = [num ** 2 for num in nums]
+    result.sort... {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: ✅ Expected output: [0, 1, 9, 16, 100] {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: 📝 Normalized 7 lines of code {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:59"}
+info: ✅ Entered code in editor with normalized indentation {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:01"}
+info: About to click Run button... {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:01"}
+info: ✅ Clicked Run button (should trigger runit()) {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:01"}
+info: Waited 3 seconds after Run click {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:04"}
+info: 📖 Reading expected output from Excel: ArrayPracticeSolutions, Row: 3 {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:04"}
+info: Read data from sheet: ArrayPracticeSolutions, row: 3 {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:04"}
+info: ✅ Verifying output matches: [0, 1, 9, 16, 100] {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:04"}
+info: Expected: [0, 1, 9, 16, 100] {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:04"}
+info: Actual: [0, 1, 9, 16, 100] {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:04"}
+info: ✅ Output verified: [0, 1, 9, 16, 100] {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:04"}
+info: Clicked Submit button {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:05"}

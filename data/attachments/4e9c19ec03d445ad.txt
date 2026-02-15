@@ -1,0 +1,14 @@
+info: Detected OS: linux, using Control key {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:42"}
+info: Navigated to Graph landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:43"}
+info: Clicked topic: Graph {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:43"}
+info: Loaded Excel file: ./testdata/TestData.xlsx {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:43"}
+info: Read data from sheet: EditorTest, row: 0 {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:43"}
+info: 📝 Normalized 1 lines of code {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:43"}
+info: ✅ Entered code in editor with normalized indentation {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:45"}
+info: About to click Run button... {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:45"}
+info: ✅ Clicked Run button (should trigger runit()) {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:45"}
+info: Waited 3 seconds after Run click {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:48"}
+info: Read data from sheet: EditorTest, row: 0 {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:48"}
+info: Expected: Editor test successful {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:48"}
+info: Actual: Editor test successful {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:48"}
+info: ✅ Output verified: Editor test successful {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:42:48"}
