@@ -1,5 +1,0 @@
-info: Navigated to sign in page {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:34"}
-info: Entered username: testuser123 {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:34"}
-info: Entered password {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:34"}
-info: Clicked Login button {"service":"dsalgo-test-framework","timestamp":"2026-02-13 18:02:35"}
-✅ Password validation triggered: Please fill out this field.

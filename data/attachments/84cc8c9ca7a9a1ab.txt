@@ -1,0 +1,3 @@
+info: Detected OS: linux, using Control key {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:08:44"}
+info: Navigated to Tree landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:08:44"}
+info: Clicked topic: Overview of Trees {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:08:44"}

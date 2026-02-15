@@ -1,0 +1,2 @@
+info: Navigated to sign in page {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:06:31"}
+✅ Navigated directly to /tree/types-of-trees/
