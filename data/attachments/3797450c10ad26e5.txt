@@ -1,0 +1,2 @@
+info: Clicked dropdown menu {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:54:45"}
+info: Selected Graph from dropdown {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:54:45"}

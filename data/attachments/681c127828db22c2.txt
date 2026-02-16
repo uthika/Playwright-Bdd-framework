@@ -1,2 +1,0 @@
-info: Navigated to sign in page {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:35:03"}
-info: Clicked Register link {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:35:03"}

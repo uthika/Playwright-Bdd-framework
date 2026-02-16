@@ -1,2 +1,0 @@
-info: Clicked Graph Get Started button {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:40:32"}
-info: Verified Graph landing page loaded {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:40:32"}

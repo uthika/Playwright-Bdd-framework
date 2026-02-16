@@ -1,0 +1,6 @@
+info: Navigated to registration page {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:54:58"}
+info: Entered username: testuser123 {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:54:58"}
+info: Entered password {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:54:58"}
+info: Entered password confirmation {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:54:58"}
+info: Clicked Register button {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:54:58"}
+info: ✅ Error message found: password_mismatch:The two password fields didn’t match. {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:54:59"}
