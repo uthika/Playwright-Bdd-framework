@@ -1,0 +1,89 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - link "NumpyNinja" [ref=e4] [cursor=pointer]:
+      - /url: /
+    - generic [ref=e5]:
+      - link "Data Structures" [ref=e8] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: "#"
+        - list [ref=e11]:
+          - link [ref=e12] [cursor=pointer]:
+            - /url: "#"
+          - link "Register" [ref=e13] [cursor=pointer]:
+            - /url: /register
+          - link "Sign in" [ref=e14] [cursor=pointer]:
+            - /url: /login
+  - generic [ref=e16]:
+    - generic [ref=e18]:
+      - paragraph [ref=e19]: Linked List
+      - listitem [ref=e20]:
+        - link "Introduction" [ref=e21] [cursor=pointer]:
+          - /url: /linked-list/introduction/
+      - listitem [ref=e22]:
+        - link "Creating Linked LIst" [ref=e23] [cursor=pointer]:
+          - /url: /linked-list/creating-linked-list/
+      - listitem [ref=e24]:
+        - link "Types of Linked List" [ref=e25] [cursor=pointer]:
+          - /url: /linked-list/types-of-linked-list/
+      - listitem [ref=e26]:
+        - link "Implement Linked List in Python" [ref=e27] [cursor=pointer]:
+          - /url: /linked-list/implement-linked-list-in-python/
+      - listitem [ref=e28]:
+        - link "Traversal" [ref=e29] [cursor=pointer]:
+          - /url: /linked-list/traversal/
+      - listitem [ref=e30]:
+        - link "Insertion" [ref=e31] [cursor=pointer]:
+          - /url: /linked-list/insertion-in-linked-list/
+      - listitem [ref=e32]:
+        - link "Deletion" [ref=e33] [cursor=pointer]:
+          - /url: /linked-list/deletion-in-linked-list/
+      - link "Practice Questions" [ref=e34] [cursor=pointer]:
+        - /url: /linked-list/practice
+    - generic [ref=e35]:
+      - strong [ref=e36]:
+        - paragraph [ref=e37]: Types of Linked List
+      - paragraph
+      - paragraph [ref=e38]:
+        - strong [ref=e39]: Types of Linked list
+      - paragraph [ref=e40]:
+        - strong [ref=e41]: Singly Linked List
+        - text: ": Each node has a single link to another node is called Singly Linked List."
+      - paragraph [ref=e42]:
+        - text: A
+        - strong [ref=e43]:
+          - link "singly linked list" [ref=e44] [cursor=pointer]:
+            - /url: https://www.javatpoint.com/singly-linked-list
+        - text: can be simply called a
+        - strong [ref=e45]:
+          - link "linked list" [ref=e46] [cursor=pointer]:
+            - /url: https://www.javatpoint.com/ds-linked-list
+        - text: . A singly linked list is a list that consists of a collection of nodes, and each node has two parts; one part is the data part, and another part is the address. The singly linked can also be called a chain as each node refers to another node through its address part. We can perform various operations on a singly linked list like insertion, deletion, and traversing.
+      - paragraph [ref=e47]
+      - paragraph [ref=e48]:
+        - emphasis [ref=e49]:
+          - strong [ref=e50]: Doubly Linked Lis
+        - emphasis [ref=e51]:
+          - strong [ref=e52]: "t:"
+        - emphasis [ref=e53]:
+          - strong [ref=e54]: Doubly linked list
+        - text: is a sequence of elements in which every node has link to its previous node and next node.
+      - paragraph [ref=e55]:
+        - text: A
+        - strong [ref=e56]
+        - strong [ref=e57]:
+          - link "doubly linked list" [ref=e58] [cursor=pointer]:
+            - /url: https://www.javatpoint.com/doubly-linked-list
+        - text: is another
+        - link "type of the linked list" [ref=e59] [cursor=pointer]:
+          - /url: https://www.javatpoint.com/ds-types-of-linked-list
+        - text: . It is called a doubly linked list because it contains two addresses while a singly linked list contains a single address. It is a list that has total three parts, one is a data part, and others two are the pointers, i.e., previous and next. The previous pointer holds the address of the previous node, and the next pointer holds the address of the next node. Therefore, we can say that list has two references, i.e., forward and backward reference to traverse in either direction.
+      - paragraph [ref=e60]
+      - paragraph
+      - link "Try here>>>" [ref=e61] [cursor=pointer]:
+        - /url: /tryEditor
+```
