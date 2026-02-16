@@ -1,0 +1,2 @@
+info: Navigated to Linked List landing page {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:38:57"}
+info: Clicked topic: Types of Linked List {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:38:57"}

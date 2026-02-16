@@ -1,0 +1,10 @@
+info: Clicked Sign out link {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:37:10"}
+info: Verified alert message: Logged out successfully {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:37:10"}
+info: Verified Sign in link is visible {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:37:10"}
+info: Verified Register link is visible {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:37:10"}
+🔐 Logging in with username: playwrightjs
+✅ Successfully logged in as playwrightjs
+💾 Saved authentication state to .auth/user.json
+✅ Successfully logged in as playwrightjs
+✅ User is logged in successfully
+info: Verified username is displayed:  {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:37:11"}

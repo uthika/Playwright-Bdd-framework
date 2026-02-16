@@ -1,2 +1,0 @@
-info: Clicked dropdown menu {"service":"dsalgo-test-framework","timestamp":"2026-02-16 16:53:21"}
-info: Selected Queue from dropdown {"service":"dsalgo-test-framework","timestamp":"2026-02-16 16:53:21"}

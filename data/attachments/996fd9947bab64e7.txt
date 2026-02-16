@@ -1,0 +1,3 @@
+info: Navigated to homepage {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:35:05"}
+info: Verified homepage loaded {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:35:05"}
+info: Verified Get Started button is visible {"service":"dsalgo-test-framework","timestamp":"2026-02-16 17:35:05"}
