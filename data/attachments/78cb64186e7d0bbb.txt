@@ -1,0 +1,12 @@
+info: Navigated to registration page {"service":"dsalgo-test-framework","timestamp":"2026-02-16 16:53:29"}
+info: Entered username: testuser123 {"service":"dsalgo-test-framework","timestamp":"2026-02-16 16:53:29"}
+info: Entered password {"service":"dsalgo-test-framework","timestamp":"2026-02-16 16:53:30"}
+info: Entered password confirmation {"service":"dsalgo-test-framework","timestamp":"2026-02-16 16:53:30"}
+info: Clicked Register button {"service":"dsalgo-test-framework","timestamp":"2026-02-16 16:53:30"}
+error: ❌ Expected error message not found: "password can't be entirely numeric" {"service":"dsalgo-test-framework","timestamp":"2026-02-16 16:53:31"}
+error: Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "password can't be entirely numeric"
+Received string:    "·····
+            password_mismatch:The two password fields didn’t match.·····
+  " {"service":"dsalgo-test-framework","timestamp":"2026-02-16 16:53:31"}

@@ -1,3 +1,0 @@
-info: Clicked dropdown menu {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:39:12"}
-info: Selected Queue from dropdown {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:39:13"}
-info: Verified alert message: You are not logged in {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:39:13"}

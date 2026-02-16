@@ -1,3 +1,0 @@
-info: Navigated to registration page {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:13"}
-info: Clicked top Sign in link (navbar) {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:13"}
-info: ✅ Navigated to login page {"service":"dsalgo-test-framework","timestamp":"2026-02-15 22:41:13"}
