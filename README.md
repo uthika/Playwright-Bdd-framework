@@ -811,6 +811,71 @@ ExcelJS provides better async/await support, handles large files more efficientl
 5. Commit with conventional commits: `git commit -m "feat: add new array test scenarios"`
 6. Push and create PR: `git push origin feature/your-feature-name`
 
+### Git Workflow Guide
+
+Understanding Git commands is essential for contributing to this project. Here are the most common commands you'll use:
+
+#### Syncing Your Fork
+
+**`git pull origin main`**
+
+This command does two things:
+1. **`git fetch origin main`** — Downloads the latest changes from the `main` branch of the remote repository (called `origin`) to your local machine
+2. **`git merge origin/main`** — Merges those downloaded changes into your current branch
+
+**When to use it:**
+- Before starting new work to ensure you have the latest code
+- To update your local `main` branch with changes from the remote repository
+- To resolve conflicts by getting the latest changes
+
+**Example workflow:**
+```bash
+# Switch to your main branch
+git checkout main
+
+# Pull the latest changes from remote
+git pull origin main
+
+# Now create your feature branch from the updated main
+git checkout -b feature/new-feature
+```
+
+#### Common Git Commands
+
+| Command | What It Does |
+|---|---|
+| `git status` | Shows which files have been modified, staged, or are untracked |
+| `git add .` | Stages all changes in the current directory for commit |
+| `git commit -m "message"` | Commits staged changes with a descriptive message |
+| `git push origin branch-name` | Pushes your local commits to the remote repository |
+| `git checkout -b branch-name` | Creates and switches to a new branch |
+| `git checkout branch-name` | Switches to an existing branch |
+| `git branch` | Lists all local branches (current branch marked with `*`) |
+| `git log --oneline` | Shows commit history in a compact format |
+| `git diff` | Shows unstaged changes in your working directory |
+| `git fetch origin` | Downloads updates from remote without merging |
+| `git merge branch-name` | Merges specified branch into current branch |
+
+#### Keeping Your Feature Branch Updated
+
+```bash
+# While on your feature branch
+git checkout feature/your-feature-name
+
+# Fetch and merge latest changes from main
+git pull origin main
+
+# Resolve any conflicts if they occur
+# Then continue working on your feature
+```
+
+#### Understanding Remote vs Local
+
+- **Remote (`origin`)**: The GitHub repository (online)
+- **Local**: Your copy of the repository on your computer
+- **`main` branch**: The primary branch containing production-ready code
+- **Feature branch**: Your personal branch for developing a specific feature
+
 ### Commit Message Format
 
 ```
